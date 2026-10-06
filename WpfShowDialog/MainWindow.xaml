@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfShowDialog.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfShowDialog"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="MainButton" Content="Press buttton" HorizontalAlignment="Center" Margin="0,280,0,0" VerticalAlignment="Top" Height="79" Width="204" FontSize="18" Command="{Binding GetDataCommand}"/>
+        <TextBox
+
+    HorizontalAlignment="Center" Margin="0,115,0,0" IsEnabled="False" Width="262" VerticalAlignment="Top"  TextWrapping="Wrap" x:Name="MainFormTextBox" Height="43" FontSize="18"/>
+        <TextBox x:Name="OutputTextBox" HorizontalAlignment="Center" Margin="0,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" Height="43" FontSize="18" IsEnabled="False" Text="{Binding Data, UpdateSourceTrigger=PropertyChanged}"/>
+
+    </Grid>
+</Window>

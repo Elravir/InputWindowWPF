@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfShowDialog.TakeInputText"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfShowDialog"
+        mc:Ignorable="d"
+        Title="TakeInputText" Height="450" Width="800"
+        Closing="Window_Closing">
+    <Grid>
+        <TextBox x:Name="InputTextBox" HorizontalAlignment="Left" Margin="280,116,0,0" TextWrapping="Wrap" Text="Введите текст" VerticalAlignment="Top" Width="213" Height="57" FontSize="18" TextChanged="InputTextBox_TextChanged"/>
+        <Button x:Name="OkButton" Content="Ok" HorizontalAlignment="Left" Margin="295,263,0,0" VerticalAlignment="Top" Height="78" Width="183" FontSize="18" Click="Button_Click"/>
+
+    </Grid>
+</Window>
